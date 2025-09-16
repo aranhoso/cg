@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL - Desenho de Formas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>WebGL: Desenho Interativo</h1>
+    <canvas id="glcanvas" width="800" height="600"></canvas>
+    <div id="status-bar">
+        Modo de Desenho: <strong>Linhas</strong> | 
+        Modo de Teclado: <strong>Nenhum</strong> | 
+        Cor: <span id="color-preview" style="background-color: black;"></span> | 
+        Espessura: <strong>1</strong>
+    </div>
+    <div id="instructions">
+        <h3>Instruções:</h3>
+        <ul>
+            <li><strong>Clique</strong> no canvas para definir pontos.</li>
+            <li><strong>L / T</strong>: Alterna entre desenhar <strong>L</strong>inhas ou <strong>T</strong>riângulos.</li>
+            <li><strong>K</strong>: Ativa o modo de seleção de <strong>cor</strong>. Depois, use as teclas <strong>0-9</strong>.</li>
+            <li><strong>E</strong>: Ativa o modo de seleção de <strong>e</strong>spessura. Depois, use as teclas <strong>1-9</strong>.</li>
+        </ul>
+    </div>
+</body>
+</html>
