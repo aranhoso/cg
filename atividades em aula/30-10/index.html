@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL - Câmera 3D Pura</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; background: #f0f0f0; }
+        canvas { border: 1px solid black; background: #FFFFFF; } /* Fundo branco */
+        #status-bar { font-size: 1.1em; margin: 10px; }
+        #instructions { border: 1px solid #ccc; background: #fafafa; padding: 15px; width: 780px; }
+    </style>
+</head>
+<body>
+    <h1>WebGL: Câmera 3D (Pan/Orbit)</h1>
+    <canvas id="glcanvas" width="800" height="600"></canvas>
+    <div id="status-bar">
+        Modo Câmera: <strong id="camera-mode-status">Órbita</strong>
+    </div>
+    <div id="instructions">
+        <h3>Instruções:</h3>
+        <ul>
+            <li><strong>O</strong>: Ativa modo <strong>Órbita</strong> (Slide 21: "mover ponto de visão ao redor do objeto").</li>
+            <li><strong>P</strong>: Ativa modo <strong>Panorâmica (Pan)</strong> (Slide 21: "fixando N e modificando o ponto de visão").</li>
+            <li><strong>Setas (Esquerda/Direita)</strong>: Gira (Órbita) / Move Eixo X (Pan).</li>
+            <li><strong>Setas (Cima/Baixo)</strong>: Gira (Órbita) / Move Eixo Y (Pan).</li>
+            <li><strong>+/-</strong>: Zoom In/Out (Aproxima ou afasta a câmera).</li>
+        </ul>
+    </div>
+    <script src="script.js"></script> </body>
+</html>
